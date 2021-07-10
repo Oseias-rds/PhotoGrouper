@@ -17,8 +17,21 @@ public class FolderManager {
         }
     }
 
-    public void moverarquivo() {
+    public void moverarquivo(String destino,File arquivo) {
+        
+        File diretorioDestino = new File(destino);
+        
+        File config = new File(diretorioDestino, arquivo.getName());
+        boolean sucesso = arquivo.renameTo(config);
+        
+        if(sucesso){
+            System.out.println(" Arquivo movido com sucesso ");
+        }else{
+            System.out.println(" Erro ao mover o Arquivo ");
+        }
+        
 
+        
     }
 
 }

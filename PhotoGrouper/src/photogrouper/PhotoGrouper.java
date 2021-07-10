@@ -1,5 +1,7 @@
 package photogrouper;
 
+import java.io.File;
+
 /**
  *
  * @author David
@@ -7,9 +9,16 @@ package photogrouper;
 public class PhotoGrouper {
 
     public static void main(String[] args) {
+
+       
+        
+        File f = new File("C:\\Users\\user\\Desktop\\2020\\julho\\imagem.jpg");
+        
+        FileWrapper w = new FileWrapper(f);
+
    
         
-        PhotoController photoController = new PhotoController("C:\\Users\\David\\Desktop\\TestFolder");
+        //PhotoController photoController = new PhotoController("C:\\Users\\David\\Desktop\\TestFolder");
          
         //FolderManager s = new FolderManager();
         
