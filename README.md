@@ -8,10 +8,10 @@
     <img alt="Git" src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"/>
 </div>
 
-<h2>Java application to get grouped photos by date 🖼�?☕ <h2>
+<h2>Java application to get grouped photos by date ☕🖼️ <h2>
 
 <h6>
-    Project created only for educational purposes. 📚
+    Project created only for educational purposes📚.
 </h6>
 
 <br><br>
