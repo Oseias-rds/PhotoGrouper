@@ -7,8 +7,15 @@ package photogrouper;
 public class PhotoGrouper {
 
     public static void main(String[] args) {
-     
+   
         
         PhotoController photoController = new PhotoController("C:\\Users\\David\\Desktop\\TestFolder");
-    }   
+         
+        //FolderManager s = new FolderManager();
+        
+        //s.criar("C:\\Users\\user\\Desktop","teste");
+        
+    }
+    
+
 }
