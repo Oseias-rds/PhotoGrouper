@@ -18,16 +18,18 @@ public class FileWrapper {
     private String ano;
     private String mes;
     private String tipo; 
+    private File myfile;
     
     
     public FileWrapper(File f){
+      this.myfile = f;
       BasicFileAttributes atributos = null;
         try {
             atributos = Files.readAttributes(f.toPath(), BasicFileAttributes.class);
         } catch (IOException ex) {
             Logger.getLogger(FileWrapper.class.getName()).log(Level.SEVERE, null, ex);
         }
-      FileTime time = atributos.creationTime();
+      FileTime time = atributos.lastModifiedTime();
       String pattern = "yyyy-MM";
       SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
       String formatted = simpleDateFormat.format( new Date( time.toMillis() ) );
@@ -66,6 +68,14 @@ public class FileWrapper {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public File getMyfile() {
+        return myfile;
+    }
+
+    public void setMyfile(File myfile) {
+        this.myfile = myfile;
     }
     
     

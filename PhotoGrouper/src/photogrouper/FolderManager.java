@@ -8,13 +8,15 @@ import java.io.File;
  */
 public class FolderManager {
 
-    public void criar(String caminho, String nome) {
+    public boolean criar(String caminho, String nome) {
         File file = new File(caminho + "\\" + nome);
 
         if (!file.exists()) {
             file.mkdirs();
-
+            return true;
         }
+        
+        return false;
     }
 
     public void moverarquivo(String destino,File arquivo) {
